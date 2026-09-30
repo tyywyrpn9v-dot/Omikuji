@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Japan Omikuji Database Entry",
+  "type": "object",
+  "required": [
+    "id",
+    "name_jp",
+    "shrine_temple_jp",
+    "prefecture",
+    "images",
+    "motif",
+    "material",
+    "price",
+    "notes",
+    "source_url",
+    "source_title",
+    "source_published_date",
+    "data_retrieved_date",
+    "official_url",
+    "official_social_urls",
+    "last_verified_date",
+    "status",
+    "version_notes"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name_jp": {
+      "type": "string",
+      "description": "御神籤名稱；以日文正式／可核實名稱為準"
+    },
+    "shrine_temple_jp": {
+      "type": "string",
+      "description": "神社／寺院正式日文名稱"
+    },
+    "institution_type": {
+      "type": "string",
+      "enum": [
+        "神社",
+        "寺院",
+        "その他",
+        ""
+      ]
+    },
+    "prefecture": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "google_maps_url": {
+      "type": "string"
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "motif": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "material": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "source_url": {
+      "type": "string"
+    },
+    "source_title": {
+      "type": "string"
+    },
+    "source_published_date": {
+      "type": "string"
+    },
+    "data_retrieved_date": {
+      "type": "string"
+    },
+    "official_url": {
+      "type": "string"
+    },
+    "official_social_urls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "last_verified_date": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "current_confirmed",
+        "previously_confirmed",
+        "discontinued",
+        ""
+      ]
+    },
+    "version_notes": {
+      "type": "string"
+    },
+    "search_terms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

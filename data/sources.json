@@ -1,0 +1,59 @@
+{
+  "source_priority": [
+    {
+      "rank": 1,
+      "type": "official",
+      "description": "神社／寺院官方網站"
+    },
+    {
+      "rank": 2,
+      "type": "official_social",
+      "description": "官方 X / Instagram / Facebook"
+    },
+    {
+      "rank": 3,
+      "type": "government_tourism",
+      "description": "政府／官方觀光機構"
+    },
+    {
+      "rank": 4,
+      "type": "reliable_photo",
+      "description": "近期可靠照片／參拜紀錄，例如 Hotokami"
+    },
+    {
+      "rank": 5,
+      "type": "specialist_database",
+      "description": "專門御神籤資料庫／既有五個核心來源"
+    },
+    {
+      "rank": 6,
+      "type": "general_blog",
+      "description": "一般旅遊／個人部落格"
+    },
+    {
+      "rank": 7,
+      "type": "resale",
+      "description": "二手／轉售網站，只作歷史佐證，不作目前在授與的唯一證據"
+    }
+  ],
+  "core_sources": [
+    "https://gajalife.com/zenkoku-yurumikuji/",
+    "https://omikujizukan.cocolog-nifty.com/blog/cat76050564/index.html",
+    "https://omikujisuki.com/",
+    "https://yashirocollection.com/omikuji-gallery/yurumikuji/",
+    "https://hotokami.jp/photos/omikuji/"
+  ],
+  "status_definitions": {
+    "current_confirmed": "有近期可靠證據確認目前可授與／可取得",
+    "previously_confirmed": "曾有可靠資料確認，但目前未找到足夠證據確認仍在授與",
+    "discontinued": "有可靠資料明確指出已停止、撤下或終了",
+    "": "證據不足，不作狀態推斷"
+  },
+  "rules": [
+    "同一御神籤即使出現在多個資料來源，只建立一個資料庫 entry。",
+    "多個網站互相轉載同一資料，不視為多個獨立證據。",
+    "來源刊載日期、資料取得日期、最後核實日期必須分開記錄。",
+    "沒有可靠資料的欄位必須留白，不可猜測。",
+    "舊 entry 原則上不刪除；狀態改變以 status 和 version_notes 記錄。"
+  ]
+}
